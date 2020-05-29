@@ -11,7 +11,7 @@ class Home extends Component {
             to="recipes"
             className="text-uppercase btn btn-secondary btn-lg mt-3"
           >
-            Search Recipes
+            Search Recipes <i className="fas fa-search text-dark ml-2"></i>
           </Link>
         </Header>
       </div>
