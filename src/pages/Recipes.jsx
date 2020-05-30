@@ -27,7 +27,7 @@ class Recipes extends Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         ></Search>
-        <RecipeList></RecipeList>
+        <RecipeList recipes={recipeData}></RecipeList>
       </div>
     );
   }
