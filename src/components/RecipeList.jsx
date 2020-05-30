@@ -18,7 +18,7 @@ class RecipeList extends Component {
 
           <div className="row">
             {recipes.map((recipe) => (
-              <Recipe key={recipe.recipe_id}></Recipe>
+              <Recipe key={recipe.recipe_id} recipes={recipes}></Recipe>
             ))}
           </div>
         </div>
