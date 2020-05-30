@@ -22,7 +22,6 @@ class Recipes extends Component {
   render() {
     return (
       <div>
-        <h1>Hello From Recipes.jsx</h1>
         <Search
           search={this.state.search}
           handleChange={this.handleChange}
