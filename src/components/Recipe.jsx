@@ -9,17 +9,17 @@ class Recipe extends Component {
       source_url,
       title,
       publisher,
-    } = this.props.recipes;
-    console.log(this.props.recipes);
+    } = this.props.recipe;
+    console.log(this.props.recipe);
 
     return (
       <div className="col-10 mx-auto col-md-6 col-lg-4">
-        <div className="card border border-primary" style={{ height: "100%" }}>
+        <div className="card" style={{ height: "100%" }}>
           <img
             src={image_url}
             alt="Recipe"
             style={{ height: "14rem" }}
-            className=" border border-warning img-card-top"
+            className="  img-card-top"
           />
 
           <div className="card-body text-capitalize">

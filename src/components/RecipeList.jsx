@@ -3,7 +3,7 @@ import Recipe from "./Recipe";
 
 class RecipeList extends Component {
   render() {
-    const { recipes } = this.props;
+    const { recipe } = this.props;
 
     return (
       <>
@@ -17,8 +17,8 @@ class RecipeList extends Component {
           {/*End Of Title */}
 
           <div className="row">
-            {recipes.map((recipe) => (
-              <Recipe key={recipe.recipe_id} recipes={recipes}></Recipe>
+            {recipe.map((recipe) => (
+              <Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>
             ))}
           </div>
         </div>
