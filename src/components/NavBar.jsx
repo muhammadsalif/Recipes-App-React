@@ -11,12 +11,18 @@ function NavBar() {
       <div className="collapse navbar-collapse show ml-sm-5 ">
         <ul className="navbar-nav ">
           <li className="navbar-item ">
-            <Link className="navbar-link " to="/">
+            <Link
+              className="navbar-link font-weight-bold text-decoration-none"
+              to="/"
+            >
               Home
             </Link>
           </li>
           <li className="navbar-item ml-sm-5">
-            <Link className="navbar-link" to="/recipes">
+            <Link
+              className="navbar-link  font-weight-bold text-decoration-none"
+              to="/recipes"
+            >
               Recipes
             </Link>
           </li>
