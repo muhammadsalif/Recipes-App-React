@@ -10,7 +10,7 @@ class Recipe extends Component {
       title,
       publisher,
     } = this.props.recipe;
-    console.log(this.props.recipe);
+    // console.log(this.props.recipe);
 
     return (
       <div className="col-10 mx-auto col-md-6 mt-3 col-lg-4">
