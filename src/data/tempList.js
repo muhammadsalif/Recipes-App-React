@@ -52,4 +52,30 @@ export const recipeData = [
     recipe_id: "47319",
     image_url: "https://images8.alphacoders.com/358/358841.jpg",
   },
+  {
+    publisher: "The Pioneer Woman",
+    title: "Italian Spaghetti",
+    source_url:
+      "http://thepioneerwoman.com/cooking/2008/06/crash-hot-potatoes/",
+    recipe_id: "47319",
+    image_url: "https://ak.picdn.net/shutterstock/videos/703183/thumb/1.jpg",
+  },
+  {
+    publisher: "The Pioneer Woman",
+    title: "Wild Mushroom Stew",
+    source_url:
+      "http://thepioneerwoman.com/cooking/2008/06/crash-hot-potatoes/",
+    recipe_id: "47319",
+    image_url:
+      "https://static01.nyt.com/images/2014/01/06/dining/recipes-wildmushroomstew/recipes-wildmushroomstew-articleLarge.jpg",
+  },
+  {
+    publisher: "The Pioneer Woman",
+    title: "Spinach Saute And Mushrooms",
+    source_url:
+      "http://thepioneerwoman.com/cooking/2008/06/crash-hot-potatoes/",
+    recipe_id: "47319",
+    image_url:
+      "https://cdn3.tmbi.com/toh/GoogleImages/Mushroom-and-Spinach-Saute_EXPS_THAM17_24335_D11_09_5b.jpg",
+  },
 ];
