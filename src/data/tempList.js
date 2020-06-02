@@ -26,4 +26,30 @@ export const recipeData = [
     image_url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLVzssFooBuAfeTGXUS-sgIMKslHdHXCWiTuyPvlxhc4tHSBTC&usqp=CAU",
   },
+  {
+    publisher: "The Pioneer Woman",
+    title: "Italian Lasagna",
+    source_url:
+      "http://thepioneerwoman.com/cooking/2008/06/crash-hot-potatoes/",
+    recipe_id: "47319",
+    image_url:
+      "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FPhoto%2FRecipes%2F2019-11-How-to-Make-Easiest-Lasagna%2FHow-to-Make-Easiest-Lasagna_035",
+  },
+  {
+    publisher: "The Pioneer Woman",
+    title: "Mushrooms Pizza",
+    source_url:
+      "http://thepioneerwoman.com/cooking/2008/06/crash-hot-potatoes/",
+    recipe_id: "47319",
+    image_url:
+      "https://img5.goodfon.com/wallpaper/nbig/0/4a/pitstsa-griby-nachinka-kolbasa-pomidory-ogon.jpg",
+  },
+  {
+    publisher: "The Pioneer Woman",
+    title: "Hot Pasta",
+    source_url:
+      "http://thepioneerwoman.com/cooking/2008/06/crash-hot-potatoes/",
+    recipe_id: "47319",
+    image_url: "https://images8.alphacoders.com/358/358841.jpg",
+  },
 ];

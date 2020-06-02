@@ -13,7 +13,7 @@ class Recipe extends Component {
     console.log(this.props.recipe);
 
     return (
-      <div className="col-10 mx-auto col-md-6 col-lg-4">
+      <div className="col-10 mx-auto col-md-6 mt-3 col-lg-4">
         <div className="card" style={{ height: "100%" }}>
           <img
             src={image_url}

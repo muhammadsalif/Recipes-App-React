@@ -9,8 +9,8 @@ class RecipeList extends Component {
       <>
         <div className="container py-5">
           {/* Title */}
-          <div className="row ">
-            <div className="col-10 mx-auto col-md-6 text-center text-uppercase mb-3">
+          <div className="row">
+            <div className="col-10 mx-auto col-md-6 text-center text-uppercase ">
               <h1 className="text-slanted">Recipe list</h1>
             </div>
           </div>
