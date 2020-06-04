@@ -1,16 +1,36 @@
 import React, { Component } from "react";
-import { recipeData } from "./../data/tempDetails";
+// import { recipeData } from "./../data/tempDetails";
 import { Link } from "react-router-dom";
 
 class SingleRecipe extends Component {
   constructor(props) {
     super(props);
+    // this.componentDidMount = this.componentDidMount.bind(this);
+
     const id = this.props.match.params.id;
     this.state = {
-      recipe: recipeData,
+      // recipe: recipeData,
+      recipe: {},
       id: id,
-      loading: false,
+      loading: true,
     };
+  }
+
+  // Ajax request method.
+  async componentDidMount() {
+    const url = `https://recipesapi.herokuapp.com/api/get?rId=${this.state.id}`;
+    try {
+      const response = await fetch(url);
+      const responseData = await response.json();
+      this.setState({ recipe: responseData, loading: false });
+    } catch (error) {
+      console.log(error);
+      // console.log("Catch is working");
+    }
+
+    // finally {
+    //   console.log("This is always going to run");
+    // }
   }
 
   render() {
@@ -49,7 +69,7 @@ class SingleRecipe extends Component {
               </Link>
               <img
                 src={image_url}
-                alt="Recipe Image"
+                alt="Recipe"
                 className="d-block w-100"
                 style={{ maxHeight: "30rem" }}
               />
