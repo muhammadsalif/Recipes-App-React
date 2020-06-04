@@ -20,7 +20,7 @@ class SingleRecipe extends Component {
   async componentDidMount() {
     const url = `https://recipesapi.herokuapp.com/api/get?rId=${this.state.id}`;
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, { mode: "cors" });
       const responseData = await response.json();
       this.setState({ recipe: responseData, loading: false });
     } catch (error) {
