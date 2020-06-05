@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { recipeData } from "./../data/tempDetails";
+import { recipeData } from "./../data/tempDetails";
 import { Link } from "react-router-dom";
 
 class SingleRecipe extends Component {
@@ -9,28 +9,10 @@ class SingleRecipe extends Component {
 
     const id = this.props.match.params.id;
     this.state = {
-      // recipe: recipeData,
-      recipe: {},
+      recipe: recipeData,
       id: id,
-      loading: true,
+      loading: false,
     };
-  }
-
-  // Ajax request method.
-  async componentDidMount() {
-    const url = `https://recipesapi.herokuapp.com/api/get?rId=${this.state.id}`;
-    try {
-      const response = await fetch(url, { mode: "cors" });
-      const responseData = await response.json();
-      this.setState({ recipe: responseData, loading: false });
-    } catch (error) {
-      console.log(error);
-      // console.log("Catch is working");
-    }
-
-    // finally {
-    //   console.log("This is always going to run");
-    // }
   }
 
   render() {
