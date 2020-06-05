@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { recipeData } from "./../data/tempDetails";
+// import { recipeData } from "./../data/tempDetails";
 import { Link } from "react-router-dom";
 
 class SingleRecipe extends Component {
@@ -9,10 +9,25 @@ class SingleRecipe extends Component {
 
     const id = this.props.match.params.id;
     this.state = {
-      recipe: recipeData,
+      // recipe: recipeData,
+      recipe: {},
       id: id,
-      loading: false,
+      loading: true,
     };
+  }
+
+  async componentDidMount() {
+    const url = `https://recipesapi.herokuapp.com/api/get?rId=${this.state.id}`;
+    try {
+      const reponse = await fetch(url);
+      const reponseData = await reponse.json();
+      this.setState({
+        recipe: reponseData,
+        loading: false,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   render() {
